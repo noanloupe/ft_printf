@@ -6,11 +6,11 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:37:55 by noloupe           #+#    #+#             */
-/*   Updated: 2022/10/20 16:36:30 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/10/27 10:39:27 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_strlen(char *str)
 {

@@ -6,11 +6,11 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 15:36:17 by noloupe           #+#    #+#             */
-/*   Updated: 2022/10/23 14:07:18 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/10/27 16:26:14 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 static int	ft_conversion(const char c, va_list var)
 {
@@ -56,7 +56,7 @@ int	ft_printf(const char *str, ...)
 		}
 		else
 		{
-			write(1, &*str, 1);
+			write(1, str, 1);
 			++count;
 		}
 		str++;
@@ -64,19 +64,3 @@ int	ft_printf(const char *str, ...)
 	va_end(var);
 	return (count);
 }
-
-/*
-#include <stdio.h>
-int	main()
-{
-	int		size1;
-	int		size2;
-	unsigned int		nb = 0;
-
-	size1 = ft_printf("Ma variable: %X\n", nb);
-	size2 = printf("Sa variable: %X\n", nb);
-	printf("\nmine : %d\n", size1);
-	printf("real : %d\n", size2);
-	return (0);
-}
-*/

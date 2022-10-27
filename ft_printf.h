@@ -6,12 +6,12 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 13:14:36 by noloupe           #+#    #+#             */
-/*   Updated: 2022/10/23 11:47:55 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/10/27 10:36:26 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include <unistd.h>
 # include <stdarg.h>

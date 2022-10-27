@@ -6,16 +6,14 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 13:23:43 by noloupe           #+#    #+#             */
-/*   Updated: 2022/10/23 11:28:36 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/10/27 11:02:45 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_print_c(int c)
 {
-	if (!c)
-		return (0);
 	write(1, &c, 1);
 	return (1);
 }
@@ -41,8 +39,8 @@ int	ft_print_p(void *ptr)
 
 	if (!ptr)
 	{
-		write(1, "(nil)", 5);
-		return (5);
+		write(1, "0x0", 3);
+		return (3);
 	}
 	count = 0;
 	ad = (unsigned long int)ptr;

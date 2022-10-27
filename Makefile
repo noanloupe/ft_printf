@@ -6,7 +6,7 @@
 #    By: noloupe <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/17 14:42:25 by noloupe           #+#    #+#              #
-#    Updated: 2022/10/23 13:04:23 by noloupe          ###   ########.fr        #
+#    Updated: 2022/10/27 16:26:58 by noloupe          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS	=	ft_printf.c\
 
 OBJS	=	$(SRCS:.c=.o)
 
-CC	=	gcc
+CC		=	gcc
 
 FLAGS	=	-Wall -Werror -Wextra
 
@@ -41,6 +41,6 @@ clean:
 fclean:		clean
 		rm -f $(NAME)
 
-re:		fclean all
+re:			fclean all
 
 .PHONY:		all clean fclean re

@@ -6,11 +6,11 @@
 /*   By: noloupe <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:10:33 by noloupe           #+#    #+#             */
-/*   Updated: 2022/10/23 12:55:09 by noloupe          ###   ########.fr       */
+/*   Updated: 2022/10/27 10:37:17 by noloupe          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	ft_print_u(unsigned int nb)
 {
