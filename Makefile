@@ -6,7 +6,7 @@
 #    By: noloupe <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/17 14:42:25 by noloupe           #+#    #+#              #
-#    Updated: 2022/10/27 16:26:58 by noloupe          ###   ########.fr        #
+#    Updated: 2023/01/19 14:56:13 by noloupe          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,16 +30,16 @@ FLAGS	=	-Wall -Werror -Wextra
 all:		$(NAME)
 
 $(NAME):	$(OBJS)
-		ar -rc $(NAME) $(OBJS)
+		@ar -rc $(NAME) $(OBJS)
 
 .c.o:
-		$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
+		@$(CC) $(FLAGS) -c $< -o $(<:.c=.o)
 
 clean:
-		rm -f $(OBJS)
+		@rm -f $(OBJS)
 
 fclean:		clean
-		rm -f $(NAME)
+		@rm -f $(NAME)
 
 re:			fclean all
 
